@@ -1,4 +1,3 @@
-import React from "react";
-import { Text } from "react-native";
+import MoviesContainer from "./MoviesContainer";
 
-export default () => <Text>Movies</Text>;
+export default MoviesContainer;

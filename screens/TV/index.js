@@ -1,4 +1,3 @@
-import React from "react";
-import { Text } from "react-native";
+import TVContainer from "./TVContainer";
 
-export default () => <Text>TV</Text>;
+export default TVContainer;
