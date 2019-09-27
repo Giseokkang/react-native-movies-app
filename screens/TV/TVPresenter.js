@@ -30,6 +30,7 @@ const TVPresenter = ({ isLoading, error, topRated, popular, airingToday }) =>
                   posterPhoto={tv.poster_path}
                   title={tv.name}
                   voteAvg={tv.vote_average}
+                  isMovie={false}
                 />
               ))
           : null}
@@ -45,6 +46,7 @@ const TVPresenter = ({ isLoading, error, topRated, popular, airingToday }) =>
                   posterPhoto={tv.poster_path}
                   title={tv.name}
                   voteAvg={tv.vote_average}
+                  isMovie={false}
                 />
               ))
           : null}
@@ -61,6 +63,7 @@ const TVPresenter = ({ isLoading, error, topRated, popular, airingToday }) =>
                   posterPhoto={tv.poster_path}
                   title={tv.name}
                   voteAvg={tv.vote_average}
+                  isMovie={false}
                 />
               ))
           : null}

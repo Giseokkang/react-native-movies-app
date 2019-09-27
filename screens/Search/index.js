@@ -1,4 +1,3 @@
-import React from "react";
-import { Text } from "react-native";
+import SearchContainer from "./SearchContainer";
 
-export default () => <Text>Search</Text>;
+export default SearchContainer;
