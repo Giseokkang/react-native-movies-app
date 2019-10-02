@@ -15,7 +15,15 @@ export default class extends React.Component {
     const {
       navigation: {
         state: {
-          params: { id, title, isMovie, posterPhoto, voteAvg, backgroundPhoto }
+          params: {
+            id,
+            title,
+            isMovie,
+            posterPhoto,
+            voteAvg,
+            backgroundPhoto,
+            overview
+          }
         }
       }
     } = props;
@@ -25,7 +33,8 @@ export default class extends React.Component {
       isMovie,
       posterPhoto,
       voteAvg,
-      backgroundPhoto
+      backgroundPhoto,
+      overview
     };
   }
 
@@ -36,7 +45,8 @@ export default class extends React.Component {
       isMovie,
       posterPhoto,
       voteAvg,
-      backgroundPhoto
+      backgroundPhoto,
+      overview
     } = this.state;
     return (
       <DetailPresenter
@@ -46,6 +56,7 @@ export default class extends React.Component {
         posterPhoto={posterPhoto}
         voteAvg={voteAvg}
         backgroundPhoto={backgroundPhoto}
+        overview={overview}
       ></DetailPresenter>
     );
   }

@@ -20,10 +20,12 @@ const Title = styled.Text`
 const MovieItem = ({
   id,
   posterPhoto,
+  backgroundPhoto,
   title,
   voteAvg,
   navigation,
-  isMovie = true
+  isMovie = true,
+  overview
 }) => {
   return posterPhoto ? (
     <TouchableWithoutFeedback
@@ -36,7 +38,8 @@ const MovieItem = ({
             title,
             posterPhoto,
             voteAvg,
-            backgroundPhoto: null
+            backgroundPhoto,
+            overview
           }
         })
       }
@@ -55,8 +58,10 @@ const MovieItem = ({
 MovieItem.propTypes = {
   id: PropTypes.number,
   posterPhoto: PropTypes.string,
+  backgroundPhoto: PropTypes.string,
   title: PropTypes.string,
-  voteAvg: PropTypes.number
+  voteAvg: PropTypes.number,
+  overview: PropTypes.string
 };
 
 export default withNavigation(MovieItem);

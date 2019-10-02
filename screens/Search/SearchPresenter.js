@@ -72,6 +72,8 @@ const SearchPresenter = ({
                       posterPhoto={movie.poster_path}
                       title={movie.title}
                       voteAvg={movie.vote_average}
+                      overview={movie.overview}
+                      backgroundPhoto={movie.backdrop_path}
                     />
                   ))
               ) : (
@@ -90,6 +92,8 @@ const SearchPresenter = ({
                     title={tv.name}
                     voteAvg={tv.vote_average}
                     isMovie={false}
+                    overview={tv.overview}
+                    backgroundPhoto={tv.backdrop_path}
                   />
                 ))
               ) : (

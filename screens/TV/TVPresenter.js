@@ -19,6 +19,7 @@ const TVPresenter = ({ isLoading, error, topRated, popular, airingToday }) =>
     <Text>{error}</Text>
   ) : (
     <Container>
+      {console.log(topRated)}
       <Section title="Airing Today shows">
         {airingToday
           ? airingToday
@@ -31,6 +32,8 @@ const TVPresenter = ({ isLoading, error, topRated, popular, airingToday }) =>
                   title={tv.name}
                   voteAvg={tv.vote_average}
                   isMovie={false}
+                  overview={tv.overview}
+                  backgroundPhoto={tv.backdrop_path}
                 />
               ))
           : null}
@@ -47,6 +50,8 @@ const TVPresenter = ({ isLoading, error, topRated, popular, airingToday }) =>
                   title={tv.name}
                   voteAvg={tv.vote_average}
                   isMovie={false}
+                  overview={tv.overview}
+                  backgroundPhoto={tv.backdrop_path}
                 />
               ))
           : null}
@@ -64,6 +69,8 @@ const TVPresenter = ({ isLoading, error, topRated, popular, airingToday }) =>
                   title={tv.name}
                   voteAvg={tv.vote_average}
                   isMovie={false}
+                  overview={tv.overview}
+                  backgroundPhoto={tv.backdrop_path}
                 />
               ))
           : null}

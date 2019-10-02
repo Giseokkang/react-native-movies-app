@@ -33,6 +33,8 @@ const MoviesPresenter = ({ isLoading, error, nowPlaying, upcoming, popular }) =>
                     posterPhoto={movie.poster_path}
                     title={movie.title}
                     voteAvg={movie.vote_average}
+                    overview={movie.overview}
+                    backgroundPhoto={movie.backdrop_path}
                   />
                 ))
             : null}
@@ -50,6 +52,8 @@ const MoviesPresenter = ({ isLoading, error, nowPlaying, upcoming, popular }) =>
                     posterPhoto={movie.poster_path}
                     title={movie.title}
                     voteAvg={movie.vote_average}
+                    overview={movie.overview}
+                    backgroundPhoto={movie.backdrop_path}
                   />
                 ))
             : null}
